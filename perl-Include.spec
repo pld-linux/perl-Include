@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Include perl module
-Summary(pl):	Modu³ perla Include
+Summary(pl):	Modu³ Perla Include
 Name:		perl-Include
 Version:	1.02a
 Release:	9

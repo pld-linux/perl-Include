@@ -24,7 +24,8 @@ Include pozwala na korzystanie z makr #define z plików nag³ówkowych C.
 %setup -q -n Include-%{version}
 
 %build
-%{__perl} Makefile.PL \
+echo -n "use ExtUtils::MakeMaker;\n WriteMakefile( 'NAME'  => 'Include', 'VERSION_FROM'  => 'Include.pm');"> Makefile.PL.test
+%{__perl} Makefile.PL.test \
 	INSTALLDIRS=vendor
 %{__make}
 

@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	Include perl module
 Summary(pl):	Modu³ perla Include
@@ -28,6 +32,8 @@ echo -n "use ExtUtils::MakeMaker;\n WriteMakefile( 'NAME'  => 'Include', 'VERSIO
 %{__perl} Makefile.PL.test \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT

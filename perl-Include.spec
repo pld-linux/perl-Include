@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-Summary:	Include perl module
-Summary(pl):	Modu³ Perla Include
+Summary:	Include - allow use #defines from C header files
+Summary(pl):	Include - pozwól na u¿ywanie #define z plików nag³ówkowych C
 Name:		perl-Include
 Version:	1.02a
 Release:	9
@@ -28,8 +28,7 @@ Include pozwala na korzystanie z makr #define z plików nag³ówkowych C.
 %setup -q -n Include-%{version}
 
 %build
-echo -n "use ExtUtils::MakeMaker;\n WriteMakefile( 'NAME'  => 'Include', 'VERSION_FROM'  => 'Include.pm');"> Makefile.PL.test
-%{__perl} Makefile.PL.test \
+%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Include")' \
 	INSTALLDIRS=vendor
 %{__make}
 

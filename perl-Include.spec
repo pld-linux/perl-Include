@@ -3,7 +3,7 @@ Summary:	Include perl module
 Summary(pl):	Modu³ perla Include
 Name:		perl-Include
 Version:	1.02a
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Include/Include-%{version}.tar.gz

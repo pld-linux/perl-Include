@@ -3,7 +3,7 @@ Summary:	Include perl module
 Summary(pl):	Modu³ perla Include
 Name:		perl-Include
 Version:	1.02a
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl

@@ -3,11 +3,11 @@ Summary:	Include perl module
 Summary(pl):	Modu³ perla Include
 Name:		perl-Include
 Version:	1.02a
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Include/Include-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -22,7 +22,8 @@ Include pozwala na korzystanie z makr #define z plików nag³ówkowych C.
 %setup -q -n Include-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -36,5 +37,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitelib}/Include.pm
+%{perl_vendorlib}/Include.pm
 %{_mandir}/man3/*

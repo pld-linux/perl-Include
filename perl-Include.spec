@@ -22,7 +22,7 @@ Include pozwala na korzystanie z makr #define z plików nag³ówkowych C.
 %setup -q -n Include-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install

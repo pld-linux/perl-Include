@@ -25,7 +25,7 @@ Include pozwala na korzystanie z makr #define z plików nag³ówkowych C.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT

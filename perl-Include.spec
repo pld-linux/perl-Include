@@ -24,7 +24,7 @@ Include pozwala na korzystanie z makr #define z plików nag³ówkowych C.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install

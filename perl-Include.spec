@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Include - allow use #defines from C header files
-Summary(pl.UTF-8):   Include - umożliwienie używania #define z plików nagłówkowych C
+Summary(pl.UTF-8):	Include - umożliwienie używania #define z plików nagłówkowych C
 Name:		perl-Include
 Version:	1.02a
 Release:	9

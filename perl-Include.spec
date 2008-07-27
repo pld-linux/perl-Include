@@ -7,7 +7,7 @@ Summary:	Include - allow use #defines from C header files
 Summary(pl.UTF-8):	Include - umożliwienie używania #define z plików nagłówkowych C
 Name:		perl-Include
 Version:	1.02a
-Release:	9
+Release:	10
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl

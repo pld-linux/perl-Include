@@ -1,7 +1,8 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
+
+%define		pdir	Include
 %include	/usr/lib/rpm/macros.perl
 Summary:	Include - allow use #defines from C header files
 Summary(pl.UTF-8):	Include - umożliwienie używania #define z plików nagłówkowych C
@@ -13,8 +14,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Include/Include-%{version}.tar.gz
 # Source0-md5:	441aed9cce2e237f749615ca40ecb8b3
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Include/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

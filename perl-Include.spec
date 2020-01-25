@@ -3,7 +3,6 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define		pdir	Include
-%include	/usr/lib/rpm/macros.perl
 Summary:	Include - allow use #defines from C header files
 Summary(pl.UTF-8):	Include - umożliwienie używania #define z plików nagłówkowych C
 Name:		perl-Include
